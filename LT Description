@@ -1,0 +1,141 @@
+REMINDERS:
+
+
+Submission File type: PDF file
+Filename: BSCSSection_LastName1_LastName2_LastName3 (ex: Group1_BSCS2D_DelaCruz_Gomez_Valdez)
+The template of the documentation is attached.
+Deadline: LATE SUBMISSION WILL NOT BE ACCEPTED
+==========================================
+
+SEARCH PROBLEMS AND SOLUTIONS
+
+As a team with at most 3 members, design a Python program for the given search problems:
+
+PROBLEM 1: LINEAR SEARCH (Lost Baggage Tracker)
+
+At an airport, several baggage conveyors are carrying luggage. Each conveyor has a list of baggage tag numbers representing the bags currently on it.
+
+You’re given a specific tag number of a missing bag, and you must determine which conveyor (if any) contains the missing luggage.
+
+Use Linear Search to check each conveyor’s list and find the missing bag.
+
+Input Format
+
+First line: Integer T (number of test cases)
+For each test case:
+First line: Integer N (number of conveyors)
+Next N lines: space-separated integers representing baggage tags on each conveyor
+Last line: Integer X (the missing baggage tag number to find)
+Output Format
+
+For each test case, print:
+
+The conveyor number (1-based index) where the baggage is found
+If not found, print "Not Found"
+Sample Input
+
+2
+
+3
+
+101 102 103
+
+201 202 203
+
+301 302 303
+
+202
+
+
+
+2
+
+11 12 13
+
+21 22 23
+
+99
+
+Sample Output
+
+Conveyor 2
+
+Not Found
+
+Explanation
+
+Test Case 1: The tag 202 is found on conveyor 2.
+Test Case 2: Tag 99 isn’t on any conveyor.
+
+PROBLEM 2: BINARY SEARCH (Online Gadget Store Price Finder)
+
+An online gadget store maintains a sorted list of gadget prices. Customers frequently ask whether a gadget with a specific target price exists in the store.
+
+Your task is to write a Python program that uses Binary Search to efficiently determine if the target price exists in the store’s database.
+
+Input Format
+
+The first line contains an integer T (number of test cases).
+For each test case:
+The first line contains an integer N (number of gadgets).
+The second line contains N sorted integers (gadget prices).
+The third line contains an integer X (the target price to search).
+Output Format
+
+For each test case:
+
+Print "Available" if the gadget with price X exists.
+Print "Not Available" if it doesn’t.
+Sample Input
+
+3
+
+5
+
+1000 1500 2000 2500 3000
+
+1500
+
+
+
+4
+
+1200 1500 1800 2100
+
+2000
+
+
+
+3
+
+500 800 1000
+
+800
+
+Sample Output
+
+Available
+
+Not Available
+
+Available
+
+Explanation
+
+In Test Case 1, 1500 is found.
+In Test Case 2, 2000 isn’t in the list.
+In Test Case 3, 800 is found.
+Tutorial Video Requirement
+
+You must upload a video demonstration on YouTube showing how your programs work.
+
+Video must include:
+
+Code explanation highlighting how searching works
+Running the sample test cases above
+Add at least 5 test cases for Problem 1 in addition to the sample test cases
+Add at least 4 test cases for Problem 2 in addition to the sample test cases
+
+
+
+N

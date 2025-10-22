@@ -1,0 +1,37 @@
+// Lost Baggage Tracker - Linear Search Problem
+// Pseudocode
+
+START
+
+READ T  // number of test cases
+
+FOR each test_case from 1 to T:
+    READ N  // number of conveyors
+
+    CREATE an empty list called conveyors
+
+    // Read baggage tags for each conveyor
+    FOR i from 1 to N:
+        READ the line of baggage tag numbers (space-separated)
+        SPLIT the line into integers
+        ADD this list to conveyors
+
+    READ X  // the missing baggage tag number to find
+
+    SET found = FALSE
+
+    // Perform linear search
+    FOR i from 1 to N:
+        FOR each tag in conveyors[i]:
+            IF tag == X:
+                PRINT "Conveyor", i
+                SET found = TRUE
+                BREAK inner loop
+        IF found == TRUE:
+            BREAK outer loop
+
+    // If not found in any conveyor
+    IF found == FALSE:
+        PRINT "Not Found"
+
+END
