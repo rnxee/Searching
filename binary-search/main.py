@@ -1,4 +1,4 @@
-# Binary Search Function
+# binary-search Function
 def find_price(prices, target):
     first = 0
     last = len(prices) - 1

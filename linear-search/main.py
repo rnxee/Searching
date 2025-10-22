@@ -1,4 +1,4 @@
-# Linear Search Function
+# linear-search Function
 def find_baggage(conveyors, target):
     for i in range(len(conveyors)): # Loops through conveyors
         for tags in conveyors[i]: # Loops through Baggage Tags
@@ -23,12 +23,12 @@ def main():
     for i in range(cases): # For every case we'll execute this block of codes
         conveyors = int(input(f"\nCase {i+1}: No. of conveyors: "))
         baggage = get_baggage(conveyors) # Gets Baggage tag Numbers
-        x = int(input("Enter missing luggage tag No.: "))
+        x = int(input("Enter missing baggage tag no.: "))
 
-        result = find_baggage(baggage, x) # Gets the Conveyor where the missing Luggage is
+        result = find_baggage(baggage, x) # Gets the Conveyor where the missing baggage is
 
         if result != -1:
-            results.append(f"Baggage found at Conveyor {result}.")
+            results.append(f"Conveyor {result}.")
         else:
             results.append("Not Found.")
 
