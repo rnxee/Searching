@@ -33,4 +33,4 @@ Finally, I will run the full routing output.
 python3 evacuation_system.py --stage route
 The output now includes the A* routing result for each cluster. For example, Cluster 1 starts at node N2 and is routed to shelter S1. The program prints the route path, total
 cost, and remaining shelter capacity. Cluster 2 is routed from N8 to S2, and Cluster 3 is routed from N5 to S1.
-This demonstrates the complete hybrid process: first grouping people with K-Means, then routing those groups with A*.
+This demonstrates the complete hybrid process: first grouping people with K-Means, then routing those groups with A*.
